@@ -26,4 +26,6 @@ return {
   { "Diogo-ss/42-header.nvim", cmd = "Stdheader", keys = "<F1>", opts = {} },
 
   { "hashivim/vim-terraform", ft = "terraform" },
+
+  { "pearofducks/ansible-vim", ft = { "yaml", "jinja2" } },
 }
