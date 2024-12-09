@@ -22,4 +22,7 @@ return {
     event = "BufRead",
     config = function() require("lsp_signature").setup() end,
   },
+
+  { "Diogo-ss/42-header.nvim", cmd = "Stdheader", keys = "<F1>", opts = {} },
+
 }
