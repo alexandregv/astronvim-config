@@ -10,7 +10,34 @@ return {
           clipboard = "unnamed", -- Do not copy what gets deleted. Use `"+y` to copy to system clipboard
         },
       },
+      mappings = {
+        n = {
+          ["<leader>j"] = {
+            function() require("mini.jump2d").start() end,
+            desc = "Jump to spot",
+          },
+        },
+      },
     },
+  },
+
+  {
+    "echasnovski/mini.nvim",
+    version = "*",
+    lazy = false,
+    config = function()
+      require("mini.map").setup()
+      require("mini.map").open()
+
+      require("mini.trailspace").setup()
+      require("mini.trailspace").trim()
+
+      require("mini.move").setup()
+
+      require("mini.jump2d").setup()
+
+      require("mini.diff").setup()
+    end,
   },
 
   { "wilmanbarrios/palenight.nvim", lazy = true },
