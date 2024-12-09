@@ -11,6 +11,7 @@ return {
   { import = "astrocommunity.colorscheme.tokyonight-nvim" },
   -- Palenight colorscheme installed in ~/.config/nvim/lua/plugins/user.lua
 
+  -- Language Packs --
   { import = "astrocommunity.pack.lua" },
-  -- import/override with your plugins folder
+  { import = "astrocommunity.pack.go" },
 }
