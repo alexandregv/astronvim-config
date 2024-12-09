@@ -38,4 +38,10 @@ return {
     end,
     init = function(plugin) require("lazy.core.loader").ftdetect(plugin.dir .. "/editor-support/vim") end,
   },
+
+  {
+    "stevearc/oil.nvim",
+    ---@module 'oil'
+    dependencies = { { "echasnovski/mini.icons", opts = {} } },
+  },
 }
