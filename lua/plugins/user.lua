@@ -5,11 +5,6 @@ return {
     "AstroNvim/astrocore",
     ---@type AstroCoreOpts
     opts = {
-      options = {
-        opt = {
-          clipboard = "unnamed", -- Do not copy what gets deleted. Use `"+y` to copy to system clipboard
-        },
-      },
       mappings = {
         n = {
           ["<leader>j"] = {
