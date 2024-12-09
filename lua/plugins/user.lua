@@ -1,6 +1,18 @@
 ---@type LazySpec
 return {
 
+  {
+    "AstroNvim/astrocore",
+    ---@type AstroCoreOpts
+    opts = {
+      options = {
+        opt = {
+          clipboard = "unnamed", -- Do not copy what gets deleted. Use `"+y` to copy to system clipboard
+        },
+      },
+    },
+  },
+
   { "wilmanbarrios/palenight.nvim", lazy = true },
 
   { "andweeb/presence.nvim", lazy = false },
