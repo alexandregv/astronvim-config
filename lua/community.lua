@@ -14,6 +14,7 @@ return {
   -- Language Packs --
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.go" },
+  { import = "astrocommunity.pack.typescript" },
 
   -- Other --
   { import = "astrocommunity.split-and-window.edgy-nvim" },
