@@ -1,7 +1,8 @@
 ---@type LazySpec
 return {
 
-  "andweeb/presence.nvim",
+  { "andweeb/presence.nvim", lazy = false },
+
   {
     "ray-x/lsp_signature.nvim",
     event = "BufRead",
