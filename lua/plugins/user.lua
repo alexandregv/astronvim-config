@@ -20,8 +20,6 @@ return {
     end,
   },
 
-  { "wilmanbarrios/palenight.nvim", lazy = true },
-
   { "andweeb/presence.nvim", lazy = false },
 
   {

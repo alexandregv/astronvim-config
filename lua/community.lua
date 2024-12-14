@@ -9,7 +9,7 @@ return {
   -- Colorschemes --
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.colorscheme.tokyonight-nvim" },
-  -- Palenight colorscheme installed in ~/.config/nvim/lua/plugins/user.lua
+  { import = "astrocommunity.colorscheme.palenight-nvim" },
 
   -- Language Packs --
   { import = "astrocommunity.pack.lua" },
