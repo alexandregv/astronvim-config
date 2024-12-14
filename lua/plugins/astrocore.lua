@@ -11,6 +11,7 @@ return {
     options = {
       opt = {
         clipboard = "unnamed", -- Do not copy what gets deleted. Use `"+y` to copy to system clipboard
+        showtabline = 0,
       },
     },
   },

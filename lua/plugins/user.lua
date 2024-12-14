@@ -1,5 +1,30 @@
+local heirline_conditions = require "heirline.conditions"
+
 ---@type LazySpec
 return {
+  {
+    "rebelot/heirline.nvim",
+    opts = function(_, opts)
+      opts.winbar = {
+        -- Only show the winbar when a filename is present
+        { condition = function() return vim.fn.expand "%:t" ~= "" end },
+
+        -- Set to "> file.ext [filetype]" (bold) if active
+        {
+          condition = function() return heirline_conditions.is_active() end,
+          provider = function() return vim.fn.expand "> %t %y" end,
+          hl = { bold = true },
+        },
+
+        -- Set to "file.ext [filetype]" (regular) if not active
+        {
+          condition = function() return heirline_conditions.is_not_active() end,
+          provider = function() return vim.fn.expand "%t %y" end,
+          hl = { bold = false },
+        },
+      }
+    end,
+  },
 
   {
     "echasnovski/mini.nvim",
