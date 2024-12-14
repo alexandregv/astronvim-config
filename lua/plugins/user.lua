@@ -6,6 +6,9 @@ return {
     version = "*",
     lazy = false,
     config = function()
+      -- Skip setup on Alpha dashboard (filetype=alpha)
+      if vim.bo.filetype ~= "alpha" then return end
+
       require("mini.map").setup()
       require("mini.map").open()
 
