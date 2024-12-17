@@ -66,6 +66,8 @@ return {
 
   {
     "Diogo-ss/42-header.nvim",
+    lazy = true,
+    ft = { "c", "cpp", "asm" },
     cmd = "Stdheader",
     opts = {
       default_map = false, -- Renove default <F1> keymap
