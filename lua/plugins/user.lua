@@ -1,13 +1,5 @@
 local heirline_conditions = require "heirline.conditions"
 
-local function get_git_config(key)
-  local result = vim.fn.system("git config " .. key)
-  if vim.v.shell_error == 0 then
-    return result:gsub("%s+$", "") -- Trim trailing whitespace or newlines
-  end
-  return nil
-end
-
 ---@type LazySpec
 return {
   {
@@ -72,8 +64,11 @@ return {
     opts = {
       default_map = false, -- Renove default <F1> keymap
       auto_update = true,
-      user = get_git_config "user.name" or "Reach",
-      mail = get_git_config "user.email" or "reach@42paris.fr",
+      git = {
+        enabled = true,
+        user_global = false,
+        email_global = false,
+      },
     },
   },
 
