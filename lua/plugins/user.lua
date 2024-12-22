@@ -91,4 +91,6 @@ return {
     ---@module 'oil'
     dependencies = { { "echasnovski/mini.icons", opts = {} } },
   },
+
+  { "HiPhish/rainbow-delimiters.nvim" },
 }
