@@ -98,4 +98,12 @@ return {
   {
     "HiPhish/rainbow-delimiters.nvim",
   },
+
+  {
+    "Juksuu/worktrees.nvim",
+    config = function()
+      require("worktrees").setup()
+      require("telescope").load_extension "worktrees"
+    end,
+  },
 }
