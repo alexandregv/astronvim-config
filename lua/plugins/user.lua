@@ -48,7 +48,10 @@ return {
     end,
   },
 
-  { "andweeb/presence.nvim", lazy = false },
+  {
+    "andweeb/presence.nvim",
+    lazy = false,
+  },
 
   {
     "ray-x/lsp_signature.nvim",
@@ -92,5 +95,7 @@ return {
     dependencies = { { "echasnovski/mini.icons", opts = {} } },
   },
 
-  { "HiPhish/rainbow-delimiters.nvim" },
+  {
+    "HiPhish/rainbow-delimiters.nvim",
+  },
 }
